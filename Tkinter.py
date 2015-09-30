@@ -37,7 +37,7 @@ def p1_move_W(self):
     p1_x = p1_x - line_length
 
 def erase_all(self):
-    canvas.delete(all)
+    canvas.delete(ALL)
 
 ##### main:
 window = Tk()
