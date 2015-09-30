@@ -22,6 +22,7 @@ print("Hello \n I have thought of a number between 1 and 100")
 # Collect the users guess as an integer
 guess = int(input("Can you guess it? "))
 
+
 #Use our function
 higher_or_lower = is_same(computer_number, guess)
 

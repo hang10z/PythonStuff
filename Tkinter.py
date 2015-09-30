@@ -1,0 +1,33 @@
+__author__ = 'demi'
+# myEtchASketch application
+
+from tkinter import *
+
+##### Set Variables
+canvas_height = 400
+canvas_width = 600
+canvas_colour = "black"
+p1_x = canvas_width/2
+p1_y = canvas_height
+p1_colour = "green"
+line_width = 5
+line_length = 5
+
+##### Functions:
+
+#player controls, p1 means player 1
+def p1_move_N(self):
+    global p1_y
+    canvas.create_line(p1_x, p1_y, p1_x, (p1_y-line_length), width=line_width, fill=p1_colour)
+    p1_y = p1_y - line_length
+
+
+##### main:
+window = Tk()
+window.title("MyEtchASketch")
+canvas = Canvas(bg=canvas_colour, height=canvas_height, width=canvas_width, highlightthickness=0)
+canvas.pack()
+
+window.mainloop()
+
+
